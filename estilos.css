@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+    font-family: 'nillandbold';
+    src: url('nilland-bold-webfont.eot');
+    src: url('nilland-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nilland-bold-webfont.woff2') format('woff2'),
+         url('nilland-bold-webfont.woff') format('woff'),
+         url('nilland-bold-webfont.ttf') format('truetype'),
+         url('nilland-bold-webfont.svg#nillandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nillandregular';
+    src: url('font/webfontkit-nilland/nilland-webfont.eot');
+    src: url('font/webfontkit-nilland/nilland-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/webfontkit-nilland/nilland-webfont.woff2') format('woff2'),
+         url('font/webfontkit-nilland/nilland-webfont.woff') format('woff'),
+         url('font/webfontkit-nilland/nilland-webfont.ttf') format('truetype'),
+         url('font/webfontkit-nilland/nilland-webfont.svg#nillandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nilland-smallcapsregular';
+    src: url('nilland-smallcaps-webfont.eot');
+    src: url('nilland-smallcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nilland-smallcaps-webfont.woff2') format('woff2'),
+         url('nilland-smallcaps-webfont.woff') format('woff'),
+         url('nilland-smallcaps-webfont.ttf') format('truetype'),
+         url('nilland-smallcaps-webfont.svg#nilland-smallcapsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    font-size: 62.5%;
+    text-align: left;
+}
+
+body>div {
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0px;
+    align-items: center; 
+	text-align: center;
+}
+
+header {
+
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    background: url(imagenes/icono/header.png)top center / 230% no-repeat;
+    display: grid;
+    grid-template-columns: 35% 25% 25%;
+    justify-content: space-between;
+}
+
+h1 {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-indent: -99999px;
+    background: url(imagenes/icono/xapontic_logo.png) center center / 100% no-repeat;
+    grid-column: 1/2;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+
+
+
+body>div:nth-child(1)>header>nav>p>a {
+    padding: 20px;
+    text-indent: -99999px;
+    background: url(imagenes/icono/icono_realizar_pedido_blanco.svg) center center / 35% no-repeat;
+    grid-column: 2/3;
+}
+
+body>div>header>nav>h2 {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(123, 125, 128);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: white solid 2px;
+}
+
+.sidenav a:hover {
+    color: #3BA2CC;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+nav span {
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 40px !important;
+}
+
+#menudesktop {
+    display: none;
+}
+
+body>div>section:nth-child(2)>h2 {
+    display: none;
+}
+
+.carrusel section {
+    padding: 0px !important;
+}
+
+h2, h3, h4{
+    text-align: center;
+    font-family: 'nillandregular';
+    font-weight: ;
+}
+
+h2>span,
+h3>span,
+h4>span {
+    color: #9225BA;
+}
+p, aside{
+    font-family: 'Roboto', sans-serif;
+}
+.inicioIntroduccion > h2:nth-child(1){
+    margin: 0px;
+    padding: 4%;
+}
+.inicioIntroduccion{
+    background: url(imagenes/decorativa/flor_xapintic_.svg) 0% -2% / 24% no-repeat, url(imagenes/decorativa/flor_xapintic_2.png) 103% -1% / 25% no-repeat, url(imagenes/decorativa/flor_xapintic_3.png) 118% 72% / 80% no-repeat;
+}
+.contenedor-opcion-fondo-morado{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.contenedor-opcion-fondo-morado div{
+    background-color: rgba(43, 28, 66, .5);
+}
+h3{
+    font-size: 21px;
+    letter-spacing: 1pt;
+}
+.contenedor-opcion-fondo-morado h3{
+    font-weight: 50;
+}
+.contenedor-opcion-fondo-morado span{
+    font-weight: bold;
+}
+.texto-encima{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.texto-encima span:nth-child(1){
+    color: white;
+}
+.info{
+    padding: 0px 11px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    top: 86%;
+    border: 1px white solid;
+}
+.contenedor-opcion-fondo-morado a:link{
+    text-decoration: none;
+} 
+img{
+    max-width: 100%;
+}
+
+footer{ 
+    padding-bottom: 6%;
+    display: grid;
+    grid-template-columns: 22% 70%;
+    background-color: #EAEAEA;
+    border-top: 1px #9225BA solid;
+}
+footer > div:nth-child(1) p{
+    text-indent: -9999999px;
+}
+footer div:nth-child(1) > a:nth-child(1) > p:nth-child(1){
+    margin: 10% 10% 7% 10%;
+    background: url(imagenes/icono/logo-xapontic.png) 0% 0% / 100% no-repeat;
+}
+footer div div:nth-child(2){
+    display: grid;
+    grid-template-columns: 30%;
+    justify-content: center;
+    grid-template-rows: ;
+}
+body > div:nth-child(1) > footer:nth-child(7) > div:nth-child(2){
+    font-size: 8px;
+    text-align: center;
+    color: #707070;
+}
+footer aside{
+    margin: 5% 0%;
+}
+footer div div:nth-child(2) p{
+    margin-top: 0px;
+}
+footer div div:nth-child(2) a:nth-child(1) p{
+    background: url(imagenes/icono/logo-facebook.png) 10% 1% / 60% no-repeat;
+}
+footer div div:nth-child(2) a:nth-child(2) p{
+    background: url(imagenes/icono/logo-instagram.png) 10% 1% / 60% no-repeat;
+}
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+footer aside{
+    font-size: 8px;
+    font-family: 'nilland-smallcapsregular';
+}
+footer li a:link {
+    color: #261762;
+}
+
+footer div:nth-child(2)  p:nth-child(2){
+    padding-top: 2%;
+    font-size: 7px;
+}
+footer address{
+    font-style: normal;
+}
