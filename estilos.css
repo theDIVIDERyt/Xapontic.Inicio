@@ -151,7 +151,9 @@ body>div>section:nth-child(2)>h2 {
 h2, h3, h4{
     text-align: center;
     font-family: 'nillandregular';
-    font-weight: ;
+}
+h2{
+    font-size: 5vw;
 }
 
 h2>span,
@@ -167,7 +169,11 @@ p, aside{
     padding: 4%;
 }
 .inicioIntroduccion{
-    background: url(imagenes/decorativa/flor_xapintic_.svg) 0% -2% / 24% no-repeat, url(imagenes/decorativa/flor_xapintic_2.png) 103% -1% / 25% no-repeat, url(imagenes/decorativa/flor_xapintic_3.png) 118% 72% / 80% no-repeat;
+    background: url(imagenes/decorativa/fondo_de_flores_pagina_inicio.svg) 20% 90% / 115% no-repeat;
+}
+.inicioIntroduccion > p:nth-child(2){
+    font-size: 4vw;
+    margin: auto 7% 9%;
 }
 .contenedor-opcion-fondo-morado{
     position: relative;
@@ -229,7 +235,6 @@ footer div div:nth-child(2){
     display: grid;
     grid-template-columns: 30%;
     justify-content: center;
-    grid-template-rows: ;
 }
 body > div:nth-child(1) > footer:nth-child(7) > div:nth-child(2){
     font-size: 8px;
